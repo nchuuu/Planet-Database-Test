@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Favorite Planet</title>
+
+        <style>
+                body {
+                background-color: #000000;
+                margin:120;
+                text-align: center;
+                font-size: 15;
+                margin:75;padding:100;
+                background-image: url("Bgstar.jpg");
+                }
+
+                #text {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-family: Helvetica, sans-serif;
+                    font-size: 50px;
+                 color: white;
+                 z-index: 4;
+                }
+
+                #vote {
+                    align-content: center;
+                }
+
+        </style>
+
+    </head>
+
+
+    <body>
+
+            <div id="text"> Which is the coolest planet? </div>
+
+        <div id="vote"><form action="/submit" method="post">
+           
+            Coolest Planet: <select name="planet">
+                <option value="mercury">Mercury</option>
+                <option value="venus">Venus</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="saturn">Saturn</option>
+                <option value="uranus">Uranus</option>
+                <option value="neptune">Neptune</option>
+                <input type="submit" value="Submit"></div>
+       </select>    
+       <br />
+
+        </form>
+
+    </body>
+
+
+</html>
